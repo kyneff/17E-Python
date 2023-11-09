@@ -285,50 +285,89 @@
 #     print(f"{indx}: {letter}!")
 
 ## 48
-freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
-# Using a loop, print each frequency, and then print whether it is
-# in the Wi-Fi range, the FM Radio range, or Neither Wi-Fi nor FM.
+# freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
+# for freqRange in freqs:
+#     print(f"The frequency is {freqRange} MHz.")
+#     if freqRange >= 88 and freqRange <= 108:
+#         print("This is in the FM Radio range.")
+#     elif freqRange >= 2401 and freqRange <= 2484 :
+#         print("This is in the Wi-Fi range.")
+#     else:
+#         print("This is in neither the Wi-Fi nor FM Radio range.")
 
-# 49
-# Modify the previous example to count how many frequencies were in each category.
-# At the end of the program, print the count for each category.
+## 49
+# freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
+# fmRadio = 0
+# wifi = 0
+# noRange = 0
+# for freqRange in freqs:
+#     print(f"The frequency is {freqRange} MHz.")
+#     if freqRange >= 88 and freqRange <= 108:
+#         fmRadio += 1
+#     elif freqRange >= 2401 and freqRange <= 2484:
+#         wifi += 1
+#     else:
+#         noRange += 1
+# print(f"FM Radio Count: {fmRadio}")
+# print(f"Wi-Fi Count: {wifi}")
+# print(f"Neither FM Radio nor Wi-Fi Count: {noRange}")
 
-# 50
-# A report is being produced which only shows detected Wi-Fi frequencies.
-# Make a copy of the previous program that only prints the Wi-Fi frequencies from the list.
+## 50
+# freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
+# for freqRange in freqs:
+#     if freqRange >= 2401 and freqRange <= 2484:
+#         print(f"The Wi-Fi frequency is {freqRange} MHz.")
 
+## 51
+# freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
+# for indx, elem in enumerate(freqs):
+#     if elem >= 2401 and elem <= 2484:
+#         print(f"The Wi-Fi frequency is {elem} MHz with index {indx}.")
 
-# 51
-# After having read the report, someone wants to know where in the list that the Wi-Fi
-# frequencies occur. Make a program that prints both Wi-Fi frequencies and their indices.
-# You'll most likely want to use the enumerate function.
+## 52
+# freqs = [2403.6, 101.3, 90.1, 5.2, 2410.2, 3.7]
+# freqType = input("Do you want to see the results in MHz or GHz? ")
+# for freqRange in freqs:
+#     if freqType == "MHz":
+#         print(f"The frequency is {freqRange} MHz.")
+#         if freqRange >= 88 and freqRange <= 108:
+#             print("This is in the FM Radio range.")
+#         elif freqRange >= 2401 and freqRange <= 2484 :
+#             print("This is in the Wi-Fi range.")
+#         else:
+#             print("This is in neither the Wi-Fi nor FM Radio range.")
+#     elif freqType == "GHz":
+#         print(f"The frequency is {freqRange/1000} GHz.")
+#         if freqRange >= 88 and freqRange <= 108:
+#             print("This is in the FM Radio range.")
+#         elif freqRange >= 2401 and freqRange <= 2484 :
+#             print("This is in the Wi-Fi range.")
+#         else:
+#             print("This is in neither the Wi-Fi nor FM Radio range.")
+#     else:
+#         print("You must enter MHz or GHz.")
+#         exit()
 
-# Expected output:
-# 2403.6 MHz: index 0
-# 2410.2 MHz: index 4
+## 53
+# freq = input("What would you like to convert? " )
+# a, b = freq.split()
+# a = float(a)
+# if b == "MHz":
+#     print(f"That is {a/1000} GHz.")
+# elif b == "GHz":
+#     print(f"That is {a*1000} MHz.")
+# else:
+#     print("You must use the format MHz or GHz.")
 
-
-# 52
-# Some of the audience of the report is unfamiliar with MHz.
-# Modify one (any one) of the above spectrum-related questions
-# to allow the user to choose if they want to see the results in MHz or GHz.
-# Then print the frequencies using the chosen unit.
-
-
-# 53
-# Someone now wants a program to convert between MHz and GHz.
-# The person wants to be able to type everything in one prompt, for example,
-
-#   What would you like to convert? 3445 MHz
-#   That is 3.445 GHz.
-
-# Convert appropriately from MHz to GHz or vice versa using input from a single prompt.
-# Note 1: the following exercise provides a useful hint.
-# Note 2: You can assume the user enters valid data, or, for a challenge, check for data validity.
-
-
-# 54
-# Try this:
+## 54
 # userdata = input("Enter two numbers, separated by a space.")
 # a, b = userdata.split()
 # print(f"First number: {a} and second number: {b}")
+
+## 55: nested for-loops
+# for x in range(1,6):
+#     for y in range(1,6):
+#         result = x * y
+#         print(f"{x} * {y} = {result}")
+
+## 56
