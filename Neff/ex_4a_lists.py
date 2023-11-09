@@ -75,3 +75,69 @@
 # print(name[2])
 
 ## 16
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# print(names[4][3])
+
+## 17
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# print(names[0][4])
+
+## 18
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# print(names[-1][-1])
+
+## 19
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# sentence = "Hello to " + names[1] + " and everyone else."
+# print(sentence)
+
+
+## 20
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# print(f"Hello to {names[1]} and everyone else.")
+
+
+## 21
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# id_num = 4
+# print(f"ID: {id_num} Name: {names[id_num]}")
+
+## 22
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# idNum = int(input("Enter an ID number between 0-4: "))
+# print(f"The student with id number {idNum} is named {names[idNum]}.")
+
+## 24
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# newName = input("Enter a name to add to the list: ")
+# print(names)
+# names.append(newName)
+# print(names)
+
+## 26
+# names = ["Sarah", "Tom", "Harry", "Susan", "Becky"]
+# delName = int(input("Enter a number between 0-4 to remove a name from the list. "))
+# print(names)
+# del names[delName]
+# print(names)
+
+## 27 
+# A list can be generated using the range() function.
+# start = 1
+# stop = 10+1
+# step = 2
+# num_list = list(range(start, stop, step))  
+  # range parameters: start #, stop#+1, increment (i.e., the "count by" value)
+  # Note: Range always omits the final number, so a "+1" has been added 
+  # to shown what the actual stopping number will be.  In this example the stop will occur at 10.
+# print(num_list)
+
+## 28
+# Modify the previous example to create a list that includes all numbers  
+# between 0 and 30 that are divisible by 3.  
+# Note: 1, 2, 4, 5 etc. are not divisible by 3.  Do not include them.
+# start = 3
+# stop = 30+1
+# step = 3
+# num_list = list(range(start, stop, step)) 
+# print(num_list)
