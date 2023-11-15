@@ -42,11 +42,12 @@
 # f = open("original_names.txt", "a")
 # f.write("Big Dog\n")
 # f.write("Super Man\n")
-# f.write("Bones\n")
+# f.write("Bone Man\n")
 # f.close()
 
 ## 5
-f = open("original_names.txt", "r")
-lines = f.read().splitlines()
-for line in lines:
-    print(line)
+# f = open("original_names.txt", "r")
+# lines = f.read().splitlines()
+# for line in lines:
+#     username = line.split()
+#     print(f"{username[0]} {username[1]}'s username is {username[0][0].lower() + username[1].lower()}.")
