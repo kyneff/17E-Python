@@ -51,14 +51,14 @@
 import string
 
 word = input('Input a word: ')
-shift = int(input('Input a number between 0-24: '))
+shift = 5
 
 letters = list(string.ascii_lowercase)
 for x in word:
     position = letters.index(x)
     encrypt = position + shift
-
-    print(letters[encrypt], end='')
+    
+    print(letters[encrypt], end="")
 
 ## 11
 # Make Tic Tac Toe.
