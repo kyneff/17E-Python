@@ -203,9 +203,7 @@
 # print("Moose out.")
 
 ## 28    
-## Have you ever played the game Duck Duck Goose?
 # import random
-# import time
 
 # print("This is a Duck, Duck, Goose Simulator. Have fun!!!!!")
 # choices = ["Goose",
